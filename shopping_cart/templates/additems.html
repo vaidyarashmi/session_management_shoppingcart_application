@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head><title></title></head>
+    <body>
+        <div class="container" align="center">
+            <h1>Add Item Form</h1>
+            <form method="post">
+                {{form.as_p}}
+                {% csrf_token %}
+            <input type="submit" value="add item" name="">
+
+            </form><br><br><br>
+            <button><a href="/display_item_view">
+                Display Items
+              </a></button>
+            
+        </div>
+    </body>
+</html>
